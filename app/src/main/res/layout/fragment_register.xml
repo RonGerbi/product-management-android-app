@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.RegisterFragment" >
+
+    <TextView
+        android:id="@+id/registrationHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#002828"
+        android:gravity="center_horizontal"
+        android:text="Registration Page"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/registrationLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/registrationUserNameLAyout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/registrationUsernameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical"
+                android:text="Username:"
+                android:textAlignment="textStart"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/registrationUsernameInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".35"
+                android:ems="10"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:text='Your username goes here.'
+                android:textAlignment="textStart"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/registrationPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/registrationPasswordLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:text="Password:"
+                android:textAlignment="textStart"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/registrationPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".35"
+                android:ems="10"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:text="password"
+                android:textAlignment="textStart"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/registrationPhoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/registrationPhoneLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Phone Number:"
+                android:textAlignment="textStart"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/registrationPhoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".35"
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Register" />
+
+    </LinearLayout>
+
+</LinearLayout>
